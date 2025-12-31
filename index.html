@@ -115,17 +115,107 @@ body
    padding-right: 0;
    padding-top: 0;
 }
+#wb_LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid2 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#Line1
+{
+   border-color: transparent;
+   border-style: solid;
+   border-bottom-width: 109px;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   height: 0 !important;
+   line-height: 0px !important;
+   margin: 0;
+   padding: 0;
+}
 </style>
 </head>
 <body>
-<div id="PageHeader1" style="position:absolute;text-align:left;left:0px;top:0px;width:100%;height:51px;z-index:3;">
+<div id="PageHeader1" style="position:absolute;text-align:left;left:0px;top:0px;width:100%;height:88px;z-index:5;">
 </div>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_MediaPlayer1" style="display:inline-block;width:100%;z-index:0;">
-<video src="mangus2.mp4" id="MediaPlayer1" autoplay controls>
+<hr id="Line1" style="display:block;width: 100%;z-index:0;">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_MediaPlayer1" style="display:inline-block;width:100%;z-index:1;">
+<video src="mangus2.mp4" id="MediaPlayer1" autoplay controls preload="auto">
 </video>
 
 </div>
